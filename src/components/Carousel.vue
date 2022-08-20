@@ -31,6 +31,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "../styles/mixin/colors" as colors;
+
 .navigate {
   height: 100%;
   width: 100%;
@@ -44,7 +46,7 @@ export default {
     height: 40px;
     border-radius: 100%;
     padding: 5px;
-    background-color: #1971c2;
+    background-color: colors.$primary;
     color: #fff;
   }
 }
