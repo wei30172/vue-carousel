@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "slide-component",
+  name: "SlideComponent",
 };
 </script>
 
