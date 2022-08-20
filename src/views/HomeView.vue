@@ -4,6 +4,10 @@
       class="carousel"
       v-slot="{ currentSlide }"
       :slideCount="slideCount"
+      :navigation="true"
+      :pagination="true"
+      :autoPlay="true"
+      :duration="5000"
     >
       <Slide v-for="(slide, index) in carouselSlides" :key="index">
         <div v-show="currentSlide === index + 1" class="slide-info">

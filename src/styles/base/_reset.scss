@@ -1,6 +1,7 @@
 @use "../mixin/colors" as colors;
 
-body, * {
+body,
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -15,7 +16,7 @@ body, * {
   width: 0px;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -28,6 +29,9 @@ table {
   cursor: pointer;
 }
 
+.box-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
 
 .flex {
   display: flex;
@@ -48,7 +52,7 @@ table {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.75rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   border-radius: 0.5rem;
   display: block;
   text-align: center;
@@ -58,7 +62,7 @@ table {
   cursor: pointer;
   background-color: colors.$primary;
   color: colors.$white;
-  &:hover{
+  &:hover {
     color: colors.$text-primary;
   }
   &:disabled {
