@@ -17,10 +17,7 @@ export default {
 .slide-animation-leave-to {
   opacity: 0;
 }
-.slide-animation-enter-to,
-.slide-animation-leave-from {
-  opacity: 1;
-}
+
 .slide-animation-enter-active,
 .slide-animation-leave-active {
   transition: opacity 0.6s ease-in-out;
