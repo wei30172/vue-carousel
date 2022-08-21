@@ -1,6 +1,6 @@
 <template>
   <div class="slide">
-    <transition name="slide">
+    <transition name="slide-animation">
       <slot />
     </transition>
   </div>
@@ -13,16 +13,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.slide-enter-from,
-.slide-leave-to {
+.slide-animation-enter-from,
+.slide-animation-leave-to {
   opacity: 0;
 }
-.slide-enter-to,
-.slide-leave-from {
+.slide-animation-enter-to,
+.slide-animation-leave-from {
   opacity: 1;
 }
-.slide-enter-active,
-.slide-leave-active {
+.slide-animation-enter-active,
+.slide-animation-leave-active {
   transition: opacity 0.6s ease-in-out;
 }
 </style>

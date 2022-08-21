@@ -4,10 +4,10 @@
 
     <!-- Navigattion -->
     <div v-if="navEnabled" class="navigate">
-      <div class="carousel-arrow left">
+      <div class="carousel-arrow left cursor-pointer">
         <ArrowLeft @click="prevSlide" />
       </div>
-      <div class="carousel-arrow right">
+      <div class="carousel-arrow right cursor-pointer">
         <ArrowRight @click="nextSlide" />
       </div>
     </div>
@@ -18,7 +18,7 @@
         v-for="(slide, index) in getSlideCount"
         :key="index"
         @click="goToSlide(index)"
-        class="box-shadow"
+        class="box-shadow cursor-pointer"
         :class="{ active: index + 1 === currentSlide }"
       />
     </div>
@@ -27,8 +27,8 @@
 
 <script>
 import { ref, toRef } from "vue";
-import ArrowLeft from "@/features/Carousel/ArrowLeft.vue";
-import ArrowRight from "@/features/Carousel/ArrowRight.vue";
+import ArrowLeft from "@/features/icons/ArrowLeft.vue";
+import ArrowRight from "@/features/icons/ArrowRight.vue";
 
 export default {
   name: "CarouselComponent",
